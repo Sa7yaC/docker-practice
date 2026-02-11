@@ -1,1 +1,35 @@
+# Comments start with a hash symbol
+
+# Ignore all files ending with .log in any directory
+*.log 
+
+# Ignore a specific file in the root directory only
+/debug.log
+
+# Ignore the entire 'temp' directory and all its contents in any location
+temp/
+
+# Ignore all files ending with .tmp in any subdirectory
+**/*.tmp
+
+# Ignore environment files, often containing secrets
+.env
+.venv/
+
+# Ignore specific OS-generated files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Ignore build/compiled output directories and files
+build/
+dist/
+target/
+*.class
+*.pyc
+
+# Ignore dependency directories (example for Node.js and Python)
 node_modules/
+__pycache__/
+
+# Negate a pattern: ignore all .log files except 'important.log'
+!important.log
